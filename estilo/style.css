@@ -1,12 +1,26 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Rubik+Mono+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Rubik+Mono+One&family=Sriracha&display=swap');
+
+:root {
+    --fonte1: verdana, geneva, tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+
+
+
+}
 * {
     margin:0px;
     padding:0px;
+    font-size: 1em;
 }
 
 body {
     background-color: darkgray;
+    font-family: var(--fonte1);
     min-height:100vh;
 
 
@@ -27,6 +41,8 @@ header {
 header h1 {
     padding-top:50px;
     font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 10vw;
 }
 
 header p {
@@ -68,6 +84,8 @@ section {
     padding-bottom:10vh;
     line-height: 2em;
     padding-left:30px;
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
 
 
 
@@ -75,8 +93,9 @@ section {
 }
 
 section.imagem p {
-    width:400px;
+    display: inline-block;
     background-color: rgba(0, 0, 0, 0.438);
+    padding:5px;
 }
 
 footer {
